@@ -1,10 +1,14 @@
 import React from 'react'
 import logo from '../assets/images/drawers.jpg';
 import avatar from '../assets/images/avatar-michelle.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAddressBook, faCalendarAlt } from '@fortawesome/free-regular-svg-icons'
+// import { faAddressBook, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import share from '../assets/images/icon-share.svg';
 
 
 let date = ('28 Jun, 2020')
+
 
 const article = () => {
     return (
@@ -19,7 +23,7 @@ const article = () => {
                 <p className="text-grayish-blue font-medium text-sm">
                     Ever been in a room and felt like something was missing? Perhaps 
                     it felt slightly bare and uninviting. I’ve got some simple tips 
-                    to help you make any room feel complete.
+                    to help you make any room feel complete. <FontAwesomeIcon icon={faAddressBook} />
                 </p>
                 <div id="share-container" className="flex flex-row mt-6 justify-between">
                         <div className='flex flex-row'>
@@ -29,7 +33,7 @@ const article = () => {
                                 <h5 className="text-xs font-medium text-desaturated-dark-blue">{date}</h5>
                             </span>
                         </div>
-                        <div id="share-icon" className='flex flex-col justify-center'>
+                        <div id="share-icon" className='flex flex-col justify-center cursor-pointer'>
                             <div className='flex flex-col justify-center rounded-full bg-grayish-blue w-8 h-8'>
                                 <svg className='inline-block mx-auto' xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
                             </div>
