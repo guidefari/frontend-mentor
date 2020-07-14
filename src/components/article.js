@@ -2,7 +2,8 @@ import React from 'react'
 import logo from '../assets/images/drawers.jpg';
 import avatar from '../assets/images/avatar-michelle.jpg';
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaShare } from "react-icons/fa";
+// import { FaShare } from "react-icons/fa";
+import Tray from './PopupTray'
 
 
 let date = ('28 Jun, 2020')
@@ -21,7 +22,7 @@ const article = () => {
                 <p className="text-grayish-blue font-medium text-sm">
                     Ever been in a room and felt like something was missing? Perhaps 
                     it felt slightly bare and uninviting. I’ve got some simple tips 
-                    to help you make any room feel complete.  <button><FaFacebookSquare/></button>
+                    to help you make any room feel complete.
                 </p>
                 <div id="share-container" className="flex flex-row mt-6 justify-between">
                         <div className='flex flex-row'>
@@ -32,9 +33,9 @@ const article = () => {
                             </span>
                         </div>
                         <div id="share-icon" className='flex flex-col justify-center cursor-pointer'>
-                            <div className='flex flex-col justify-center rounded-full bg-grayish-blue w-8 h-8'>
-                                <FaShare className='inline mx-auto'/>
-                            </div>
+                            {/* <div className='flex flex-col justify-center rounded-full bg-grayish-blue w-8 h-8'> */}
+                                <Tray className='inline mx-auto'/>
+                            {/* </div> */}
                         </div>
                 </div>
             </div>
