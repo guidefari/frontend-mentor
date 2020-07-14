@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/images/drawers.jpg';
 import avatar from '../assets/images/avatar-michelle.jpg';
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaFacebookSquare , FaTwitter , FaPinterest } from "react-icons/fa";
 // import { FaShare } from "react-icons/fa";
 import Tray from './PopupTray'
 
@@ -33,9 +33,22 @@ const article = () => {
                             </span>
                         </div>
                         <div id="share-icon" className='flex flex-col justify-center'>
-                            {/* <div className='flex flex-col justify-center rounded-full bg-grayish-blue w-8 h-8'> */}
-                                <Tray className='inline mx-auto'>Hello bro</Tray>
-                            {/* </div> */}
+                                <Tray className='inline mx-auto'>
+                                    <div className="flex flex-row justify-between text-light-grayish-blue">
+                                        <span className='uppercase text-xs'>
+                                            S h a r e
+                                        </span>
+                                        <span>
+                                            <button><FaFacebookSquare className='text-lg'/></button>
+                                        </span>
+                                        <span>
+                                            <button><FaTwitter className='text-lg'/></button>
+                                        </span>
+                                        <span>
+                                            <button><FaPinterest className='text-lg'/></button>
+                                        </span>
+                                    </div>
+                                </Tray>
                         </div>
                 </div>
             </div>

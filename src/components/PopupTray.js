@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from "prop-types";
- import { FaShare } from "react-icons/fa";
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import { FaShare } from "react-icons/fa";
 import Box from '@material-ui/core/Box';
 import Popover from '@material-ui/core/Popover';
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
@@ -27,7 +25,7 @@ const PopupTray = ({children}) => {
                 horizontal: 'center',
               }}
           >
-            <Box p={2}>
+            <Box className='bg-dark-grayish-blue w-40' p={2}>
               {children}
             </Box>
           </Popover>
