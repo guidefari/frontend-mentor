@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types";
  import { FaShare } from "react-icons/fa";
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -6,7 +7,7 @@ import Box from '@material-ui/core/Box';
 import Popover from '@material-ui/core/Popover';
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
 
-const PopupTray = () => {
+const PopupTray = ({children}) => {
     return (
         <div className='inline mx-auto'>
             <PopupState variant="popover" popupId="demo-popup-popover">
@@ -27,7 +28,7 @@ const PopupTray = () => {
               }}
           >
             <Box p={2}>
-              <Typography>The content of the Popover.</Typography>
+              {children}
             </Box>
           </Popover>
         </div>
@@ -37,5 +38,9 @@ const PopupTray = () => {
         </div>
     )
 }
+
+PopupTray.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
 
 export default PopupTray

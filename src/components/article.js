@@ -32,9 +32,9 @@ const article = () => {
                                 <h5 className="text-xs font-medium text-desaturated-dark-blue">{date}</h5>
                             </span>
                         </div>
-                        <div id="share-icon" className='flex flex-col justify-center cursor-pointer'>
+                        <div id="share-icon" className='flex flex-col justify-center'>
                             {/* <div className='flex flex-col justify-center rounded-full bg-grayish-blue w-8 h-8'> */}
-                                <Tray className='inline mx-auto'/>
+                                <Tray className='inline mx-auto'>Hello bro</Tray>
                             {/* </div> */}
                         </div>
                 </div>
