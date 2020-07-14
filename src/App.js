@@ -4,7 +4,7 @@ import GlobalFonts from './fonts/fonts';
 
 function App() {
   return (
-    <div id="card-container" className="flex justify-center items-center h-screen w-full bg-desaturated-dark-blue text-content p-8">
+    <div id="card-container" className="flex justify-center items-center h-screen w-full bg-grayish-blue text-content p-8">
       <Article />
       <GlobalFonts/>
     </div>
