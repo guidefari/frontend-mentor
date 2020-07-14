@@ -27,10 +27,10 @@ const article = () => {
                 <div id="share-container" className="flex flex-row mt-6 justify-between">
                         <div className='flex flex-row'>
                             <img className="w-10 h-10 rounded-full mr-5" src={avatar} alt=""/>
-                            <span className="flex flex-col">
+                            <div className="flex flex-col">
                                 <h4 className="text-sm font-semibold text-dark-grayish-blue">Michelle Appleton</h4>
                                 <h5 className="text-xs font-medium text-desaturated-dark-blue">{date}</h5>
-                            </span>
+                            </div>
                         </div>
                         <div id="share-icon" className='flex flex-col justify-center'>
                                 <Tray className='inline mx-auto'>
