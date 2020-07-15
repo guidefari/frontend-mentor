@@ -11,7 +11,7 @@ const PopupTray = ({children}) => {
             <PopupState variant="popover" popupId="demo-popup-popover">
       {(popupState) => (
         <div>
-            <button {...bindTrigger(popupState)} className='bg-grayish-blue rounded-full flex flex-col justify-center align-middle w-8 h-8 focus:outline-none'>
+            <button {...bindTrigger(popupState)} className='flex flex-col items-center justify-center w-8 h-8 rounded-full bg-grayish-blue focus:outline-none'>
                 <FaShare className='inline mx-auto'/>
             </button>
           <Popover
@@ -25,7 +25,7 @@ const PopupTray = ({children}) => {
                 horizontal: 'center',
               }}
           >
-            <Box className='bg-dark-grayish-blue w-40' p={2}>
+            <Box className='w-40 bg-dark-grayish-blue' p={2}>
               {children}
             </Box>
           </Popover>
